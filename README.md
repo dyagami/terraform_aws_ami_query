@@ -30,7 +30,7 @@ A terraform configuration to quickly return all available AMI image IDs in your 
         TF_VAR_aws_region     = "YOUR_REGION"        
         ```
 
-   - Unsecure way (storing secrets in plaintext - only do it if you know the repercussions)
+   - Unsecure way (**storing secrets in plaintext - only do it if you know the repercussions**)
 
         Edit `terraform.tfvars` file in your working directory with:
 
@@ -55,4 +55,4 @@ A terraform configuration to quickly return all available AMI image IDs in your 
 6. **(Optional) Save the image list to a file**
 
     After performing the apply operation:
-    `terraform output > image_list.json`
+    `terraform output -json > image_list.json`
