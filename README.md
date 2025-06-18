@@ -50,7 +50,7 @@ A terraform configuration to quickly return all available AMI image IDs in your 
     # does not create any infrastructure
     ```
 
-    You will be asked to provide OS architecture type and keywords to search names for. After that, all official Amazon AMI images will be queried and exported to a map variable containing AMI IDs with their corresponding image names. The result will be outputted to the terminal and saved in Terraform state.
+    You will be asked to provide OS architecture type and keywords to search names for. After that, all official Amazon AMI images matching your description will be queried and exported to a map variable containing AMI IDs with their corresponding image names. The result will be outputted to the terminal and saved in Terraform state.
 
 6. **(Optional) Save the image list to a file**
 
